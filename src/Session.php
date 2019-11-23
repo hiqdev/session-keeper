@@ -1,4 +1,12 @@
 <?php
+/**
+ * Session token theft detection
+ *
+ * @link      https://github.com/hiqdev/session-keeper
+ * @package   session-keeper
+ * @license   MIT
+ * @copyright Copyright (c) 2019, HiQDev (http://hiqdev.com/)
+ */
 
 namespace HiQDev\SessionKeeper;
 
@@ -20,8 +28,6 @@ class Session
     private $finished;
 
     /**
-     * @param Browser $browser
-     * @param bool $is_secure
      * @param DateTimeImmutable $started = null
      */
     public function __construct(Browser $browser, bool $is_secure, DateTimeImmutable $started = null)

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Session token theft detection
+ *
+ * @link      https://github.com/hiqdev/session-keeper
+ * @package   session-keeper
+ * @license   MIT
+ * @copyright Copyright (c) 2019, HiQDev (http://hiqdev.com/)
+ */
 
 namespace HiQDev\SessionKeeper;
 

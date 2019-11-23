@@ -1,12 +1,18 @@
 <?php
+/**
+ * Session token theft detection
+ *
+ * @link      https://github.com/hiqdev/session-keeper
+ * @package   session-keeper
+ * @license   MIT
+ * @copyright Copyright (c) 2019, HiQDev (http://hiqdev.com/)
+ */
 
 namespace HiQDev\SessionKeeper\tests\unit;
 
-use PHPUnit\Framework\TestCase;
 use HiQDev\SessionKeeper\Activity;
-use HiQDev\SessionKeeper\Browser;
-use HiQDev\SessionKeeper\Session;
 use HiQDev\SessionKeeper\ActivityFactory;
+use PHPUnit\Framework\TestCase;
 
 class ActivityFactoryTest extends TestCase
 {

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Session token theft detection
+ *
+ * @link      https://github.com/hiqdev/session-keeper
+ * @package   session-keeper
+ * @license   MIT
+ * @copyright Copyright (c) 2019, HiQDev (http://hiqdev.com/)
+ */
 
 namespace HiQDev\SessionKeeper;
 
@@ -24,8 +32,9 @@ class SessionKeeper
 
     public function check(Activity $activity): bool
     {
+        var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, func_get_args());
+        die;
 
-        var_dump(__FILE__ . ':' . __LINE__ . ' ' . __METHOD__, func_get_args());die;
         return false;
     }
 }

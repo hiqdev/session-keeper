@@ -1,0 +1,67 @@
+{
+    "name": "hiqdev/session-keeper",
+    "type": "library",
+    "description": "Session token theft detection",
+    "keywords": [
+        "php",
+        "session",
+        "theft",
+        "detection"
+    ],
+    "homepage": "https://github.com/hiqdev/session-keeper",
+    "license": "MIT",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/hiqdev/session-keeper",
+        "issues": "https://github.com/hiqdev/session-keeper/issues",
+        "wiki": "https://github.com/hiqdev/session-keeper/wiki",
+        "forum": "http://forum.hiqdev.com/"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "d.naumenko.a@gmail.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "andreyklochok@gmail.com",
+            "homepage": "http://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@gmail.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "hiqdev/hidev": "*",
+        "hiqdev/hidev-php": "*",
+        "hiqdev/hidev-hiqdev": "*",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HiQDev\\SessionKeeper\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

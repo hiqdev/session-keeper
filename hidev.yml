@@ -1,0 +1,9 @@
+package:
+    type:           library
+    name:           session-keeper
+    headline:       Session Keeper
+    title:          Session token theft detection
+    license:        MIT
+    keywords:       php, session, theft, detection
+    description:    |
+        This package provides small library for token theft detection.

@@ -36,4 +36,12 @@ class Session
         $this->is_secure = $is_secure;
         $this->started = $started;
     }
+
+    /**
+     * Get the browser.
+     */
+    public function getBrowser(): Browser
+    {
+        return $this->browser;
+    }
 }

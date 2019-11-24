@@ -31,4 +31,14 @@ class Activity
         $this->ip = $ip;
         $this->time = $time;
     }
+
+    public function getSession(): Session
+    {
+        return $this->session;
+    }
+
+    public function getIp(): string
+    {
+        return $this->ip;
+    }
 }

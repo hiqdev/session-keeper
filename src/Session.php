@@ -44,4 +44,9 @@ class Session
     {
         return $this->browser;
     }
+
+    public function isSecure(): bool
+    {
+        return $this->is_secure;
+    }
 }

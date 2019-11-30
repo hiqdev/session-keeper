@@ -26,6 +26,15 @@ class ActivityFactoryTest extends TestCase
     private $ip1 = '1.1.1.1';
     private $ip2 = '2.2.2.2';
 
+    private $user1 = 'user1';
+    private $user2 = 'user2';
+
+    private $finger1 = 'finger1';
+    private $finger2 = 'finger2';
+
+    private $descr1 = 'Chrome on Ubuntu';
+    private $descr2 = 'Firefox on Ubuntu';
+
     public function setUp(): void
     {
         parent::setUp();
@@ -35,9 +44,9 @@ class ActivityFactoryTest extends TestCase
     public function testFromArray()
     {
         $activity = $this->factory->fromArray([
-            'client_id'     => 'user1',
-            'description'   => 'Chrome on Ubuntu',
-            'fingerprint'   => 'fin1',
+            'client_id'     => $this->user1,
+            'description'   => $this->descr1,
+            'fingerprint'   => $this->finger1,
             'ip'            => $this->ip1,
             'is_secure'     => true,
         ]);
@@ -49,5 +58,11 @@ class ActivityFactoryTest extends TestCase
         $this->assertInstanceOf(Browser::class, $browser);
 
         $this->assertSame($this->ip1, $activity->getIp());
+
+        $this->assertSame($this->descr1,    $browser->getDescription());
+        $this->assertSame($this->finger1,   $browser->getFingerprint());
+        $this->assertSame($this->user1,     $browser->getClientId());
+
+        $this->assertTrue($session->isSecure());
     }
 }

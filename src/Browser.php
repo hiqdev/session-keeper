@@ -29,4 +29,19 @@ class Browser
         $this->description = $description;
         $this->fingerprint = $fingerprint;
     }
+
+    public function getClientId(): string
+    {
+        return $this->client_id;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function getFingerprint(): string
+    {
+        return $this->fingerprint;
+    }
 }

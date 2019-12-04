@@ -27,7 +27,9 @@ class SessionKeeper
 
     public function login(Activity $activity)
     {
-        $this->repository->saveActivity($activity);
+        if ($activity->getSession()->isSecure()) {
+            $this->repository->saveActivity($activity);
+        }
     }
 
     public function check(Activity $activity): bool
@@ -36,5 +38,10 @@ class SessionKeeper
         die;
 
         return false;
+    }
+
+    public function removeBrowser(Browser $browser)
+    {
+        $this->repository->removeBrowser($browser);
     }
 }

@@ -9,6 +9,7 @@ Feature: Basics
           And user has chosen secure login
          Then login is ok
           And repository has 1 activities
+          And user is notified login from new device
 
     Scenario: OK check with same data
         Given browser fingerprint is FINGER1 and description is CHROME1

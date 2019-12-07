@@ -10,3 +10,6 @@
     - changed IP:
         - the IP is secure - ok
         - the IP is unknown - kill session, must relogin
+
+On every login from new device send notification, e.g.:
+Attention! Login from new device!
